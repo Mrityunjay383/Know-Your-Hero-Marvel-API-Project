@@ -1,0 +1,16 @@
+{
+  "name": "marvelproject",
+  "version": "1.0.0",
+  "description": "The Project with official Marvel API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mrityunjay",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}

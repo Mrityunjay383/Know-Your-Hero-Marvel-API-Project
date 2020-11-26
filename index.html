@@ -1,0 +1,112 @@
+<!-- Not Responsive -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" href="assets/spiderman.svg">
+
+    <title>Home | Know Your Hero</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+    crossorigin="anonymous" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animation.css">
+  </head>
+
+  <body>
+
+    <!-- Header Section -->
+    <header>
+      <h1>Know your Hero</h1>
+    </header>
+
+    <main>
+
+      <!-- Main Section 1 -->
+      <section class="row section1"> <!-- Bootstrap Responsive Section, second class is for local styling-->
+        <!-- Text Part of Section 1 -->
+        <div class="col-lg-6 txtPart"><!-- Half Screen size for desktop-->
+
+          <h2 id="typedTxt"></h2> <!--Manipulating text with Script-->
+
+          <!-- Animated Button -->
+          <a href="#htSection" class="buttons" id="lernBtn">
+            <button class="blob-btn">
+              Lern More
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
+          </a>
+
+        </div>
+
+        <!-- Search Part of Section 1 -->
+        <div class="col-lg-6 searchPart">
+
+          <img src="assets/iron-man.svg" alt="">
+
+          <h3>Search Here <i class="fas fa-arrow-down"></i></h3>
+
+          <form class="searchContainer" action="/characterinfomation" method="post">
+            <input class="searchInput" type="text" name="cName" placeholder="Character Name...">
+            <button class="searchBtn" type="submit" name="submit"><i class="fas fa-search"></i></button>
+          </form>
+
+        </div>
+      </section>
+
+      <!-- Main Section 2 -->
+      <section class="section2" id="htSection">
+
+        <div class="htCard"> <!--How TO Card 1-->
+          <i class="fas fa-search fa-3x"></i>
+          <h4>Search</h4>
+          <p>Type the name of the character and click search button</p>
+        </div>
+
+        <div class="imgCard">
+            <img src="assets/spiderman.svg" alt="">
+        </div>
+
+        <div class="htCard"> <!--How TO Card 2-->
+          <i class="fas fa-poll fa-3x"></i>
+          <h4>Get Results</h4>
+          <p>Get the amazing Information about the Character</p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- footer Section -->
+    <footer>
+      <p>Developed by <a href="https://instagram.com/mrityunjay.404">Mrityunjay</a></p>
+    </footer>
+
+    <!-- Local Script -->
+    <script type="text/javascript" src="animation.js"></script>
+
+  </body>
+</html>
